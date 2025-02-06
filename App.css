@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+h2{
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+
+h3{
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.error {
+  color: red;
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.playlist-item {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.playlist-item:hover {
+  transform: scale(1.1);
+}
+
+.playlist-cover {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.playlist-cover {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+
+button2{ /*button for the "Login with Spotify"*/
+  align-items: center;
+  padding: 8px 12px;
+  border: none;
+  background-color: #1db954;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button { /*button for the "select playlist"*/
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 12px;
+  border: none;
+  background-color: #1db954;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #18a249;
+}
+
+button2:hover {
+  background-color: #18a249;
+}
+
+
+@media (max-width: 900px) {
+  .playlist-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .playlist-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  }
+}
+
+.analysis-container{
+  max-width: 500px;  
+  margin: 20px auto; 
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #18a249;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
